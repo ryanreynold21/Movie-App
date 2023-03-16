@@ -8,7 +8,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <>
   <StateContextProvider>
     <AnimatePresence>
-    <App />
+      <App />
     </AnimatePresence>
   </StateContextProvider>
   </>

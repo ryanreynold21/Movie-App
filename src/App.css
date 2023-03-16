@@ -15,9 +15,9 @@ body{
 }
 
 .filtered-btn{
-    @apply  px-4 py-2 text-white border mx-2 rounded-lg hover:bg-slate-300 hover:text-black hover:border-black;
+    @apply my-4  px-4 py-2 text-white border mx-2 rounded-lg hover:bg-slate-300 hover:text-black hover:border-black;
 }
 
 .active-filtered-btn{
-    @apply px-4 py-2 text-white border mx-2 rounded-lg shadow-md shadow-white hover:bg-slate-300 hover:text-black hover:border-black
+    @apply my-4 px-4 py-2 text-white border mx-2 rounded-lg shadow-md shadow-white hover:bg-slate-300 hover:text-black hover:border-black
 }
