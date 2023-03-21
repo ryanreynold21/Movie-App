@@ -4,6 +4,7 @@ import reducer from "./reducer"
 
 const StateContext = createContext();
 
+export const ApiKey = 'efb25948ee1a984eb678b7691037a48a'
 export const StateContextProvider = ({children}) => {
     const initialState = {
         movies:[]
@@ -11,7 +12,7 @@ export const StateContextProvider = ({children}) => {
       const [movie,setMovie] = useState([]);
       const [genres,setGenres] = useState(0);
   const getmovie = async () => {
-    const {data} =await axios.get('https://api.themoviedb.org/3/movie/popular?api_key=efb25948ee1a984eb678b7691037a48a&language=en-US&page=1')
+    const {data} =await axios.get(`https://api.themoviedb.org/3/movie/popular?api_key=${ApiKey}&language=en-US&page=1`)
    setMovie(data.results)
   }
 
