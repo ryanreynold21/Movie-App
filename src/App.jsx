@@ -10,8 +10,8 @@ const App = () => {
   return (
     <div className=''>
       <Link to={'/'}>
-        <div className=" text-white font-simibold text-3xl flex items-center justify-center gap-5 p-2 w-72 rounded shadow-lg shadow-cyan-500 border border-white my-10">
-          <h1 className=''>
+        <div className=" text-white font-simibold text-3xl flex items-center justify-center gap-5 p-2 w-72 rounded shadow-lg shadow-cyan-500 border border-white my-10 mx-auto sm:mx-auto md:mx-auto lg:mx-auto">
+          <h1 className=' '>
           AKW-movie-App
           </h1>
           <BiCameraMovie className=''/>

@@ -10,7 +10,7 @@ const DetailMovie = ({item}) => {
           <h1 className=' mb-10 text-2xl font-bold'>{original_title}</h1>
           <div className=" flex mb-6 gap-3">
           <p className=' text-gray-400'>{release_date}</p>
-          {genres?.map(genre => <p className=' tracking-wider'> {genre.name},</p> )}
+          {genres?.map(genre => <p key={genre.id} className=' tracking-wider'> {genre.name},</p> )}
           </div>
           <h3 className=' text-slate-300'>Overview</h3> 
           <h1>{overview}</h1>
@@ -20,3 +20,5 @@ const DetailMovie = ({item}) => {
 }
 
 export default DetailMovie
+
+// https://api.themoviedb.org/3/movie/315162/similar?api_key=efb25948ee1a984eb678b7691037a48a&language=en-US&page=1

@@ -10,7 +10,7 @@ const Movies = ({movie}) => {
     layout
     animate={{opacity : 1}} 
     initial={{opacity : 0}} 
-    exit={{opacity : 1}} 
+    exit={{opacity : 1}}
     transition={{duration:0.5}}
     className=' mx-auto ml-6 mt-3 relative movie-card cursor-pointer'>
         <div className=" movie-border hidden transiton transition-all duration-300">

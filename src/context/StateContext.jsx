@@ -10,6 +10,7 @@ export const StateContextProvider = ({children}) => {
         movies:[]
     }
       const [movie,setMovie] = useState([]);
+      const [similarMovie,setSimilarMovie] = useState([]);
       const [genres,setGenres] = useState(0);
   const getmovie = async () => {
     const {data} =await axios.get(`https://api.themoviedb.org/3/movie/popular?api_key=${ApiKey}&language=en-US&page=1`)
